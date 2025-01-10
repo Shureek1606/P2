@@ -9,6 +9,11 @@ public class ColiisTrigg : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+
+        if (other.gameObject.tag == "Teleport")
+        {
+            gameObject.transform.position = new Vector3(60, 11, -34);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -20,3 +25,5 @@ public class ColiisTrigg : MonoBehaviour
         }
     }
 }
+
+

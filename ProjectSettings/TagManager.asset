@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Money
   - DEATH
+  - Teleport
   layers:
   - Default
   - TransparentFX
