@@ -31,6 +31,11 @@ public class CarGo : MonoBehaviour
         transform.Translate(Vector3.right * goX * Time.deltaTime * horiz);
 
         transform.Translate(Vector3.up * goY * Time.deltaTime * jump);
+
+        if (transform.localScale.x < 0.1f)
+        {
+            Destroy(gameObject);
+        }
     }
 }
 
